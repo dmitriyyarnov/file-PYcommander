@@ -1,10 +1,10 @@
 import argparse
-from core.copy import copy_file
-from core.delete import delete_path
-from core.count import count_files
-from core.search import search_files
-from core.add_date import add_date
-from core.analyse import analyse_directory
+from feature.copy import copy_file
+from feature.delete import delete_path
+from feature.count import count_files
+from feature.search import search_files
+from feature.add_date import add_date
+from feature.analyse import analyse_directory
 
 def main():
     parser = argparse.ArgumentParser(

@@ -1,10 +1,10 @@
 import unittest
 import shutil
 from pathlib import Path
-from core.copy import copy_file
-from core.delete import delete_path
-from core.count import count_files
-from core.search import search_files
+from feature.copy import copy_file
+from feature.delete import delete_path
+from feature.count import count_files
+from feature.search import search_files
 
 class TestCoreFunctions(unittest.TestCase):
     def setUp(self):

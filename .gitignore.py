@@ -3,4 +3,5 @@ __pycache__/
 *.pyo
 *.log
 *.zip
+.venv
 test_data/
