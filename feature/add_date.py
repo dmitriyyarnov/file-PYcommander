@@ -9,7 +9,6 @@ def get_creation_date(file_path: Path) -> str:
 def add_creation_date(path, recursive=False):
     # Пример простого вывода для проверки
     print(f"Добавляем дату создания в файлы по пути: {path} (recursive={recursive})")
-    # Реальная логика добавления даты должна быть тут
 
 
 def rename_with_date(file_path: Path):

@@ -52,7 +52,7 @@ def main():
     # analyse
     analyse_parser = subparsers.add_parser("analyse", help="Анализ размеров файлов в текущей директории")
 
-    args = parser.parse_args()  # ← Эта строка ОБЯЗАТЕЛЬНО должна быть
+    args = parser.parse_args()
 
     if not args.command:
         parser.print_help()
