@@ -36,7 +36,7 @@
 
 ## Примеры использования
 
-- `python main.py copy file.txt folder/file.txt`  
+- `python main.py copy file.txt folder/file.txt` 
 - `python main.py delete folder/`  
 - `python main.py count ./folder`  
 - `python main.py search . --pattern ".*.txt"`  
