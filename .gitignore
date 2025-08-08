@@ -1,3 +1,5 @@
 /backup/
 /.venv/
-/file.txt
+__pycache__/
+*.pyc
+
