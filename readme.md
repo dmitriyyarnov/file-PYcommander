@@ -52,12 +52,6 @@
 - `python -m unittest tests/test_interface.py -v`  
 - `python -m unittest discover -s tests`
 
----
-
-## Установка зависимостей (если есть)
-
-Если у проекта есть зависимости, установите их командой:
-
 
 
 
