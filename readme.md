@@ -30,15 +30,22 @@ analyse — Анализ размеров файлов в текущей дир�
 
 ##### Примеры использования
 python main.py copy file.txt backup/file.txt
+
 python main.py delete folder/
+
 python main.py count ./folder
+
 python main.py search . --pattern ".*.txt"
+
 python main.py add_date folder/ --recursive
+
 python main.py analyse
 
 ##### Запуск тестов
 Для запуска тестов используйте команды:
+
 python -m unittest tests/test_interface.py -v
+
 python -m unittest discover -s tests
 
 
