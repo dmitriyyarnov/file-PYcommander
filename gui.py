@@ -38,7 +38,6 @@ def main(page: ft.Page):
         tooltip="Здесь будет показан результат выполнения команды",
     )
 
-    # FilePicker
     def handle_file_result(e):
         new_args = []
         if e.files:
@@ -71,7 +70,6 @@ def main(page: ft.Page):
         "Выбрать папку", on_click=lambda _: file_picker.get_directory_path()
     )
 
-    # Логика выполнения команд без argparse с проверкой аргументов
     def run_command_gui_logic(cmd, args_list):
         try:
             if cmd == "copy":
@@ -110,7 +108,6 @@ def main(page: ft.Page):
         except Exception as e:
             return f"Ошибка: {e}"
 
-    # Запуск команды через GUI
     def run_command_gui(e):
         cmd = selected_command.value
         if not cmd:
@@ -122,7 +119,6 @@ def main(page: ft.Page):
             try:
                 args_list = shlex.split(args_input.value)
             except ValueError:
-                # Если остались некорректные кавычки, разбиваем просто по пробелу
                 args_list = args_input.value.split()
 
             result = run_command_gui_logic(cmd, args_list)
