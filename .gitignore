@@ -1,5 +1,17 @@
-/backup/
-/.venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.pyd
+*.pyc
+venv/
+.env/
+.env.*
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*.log
+
 

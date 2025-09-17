@@ -1,16 +1,10 @@
+import os
 import shutil
-from pathlib import Path
 
-def delete_path(path):
-    path_obj = Path(path)
-    try:
-        if path_obj.is_dir():
-            shutil.rmtree(path_obj)
-            print(f"Папка '{path}' удалена.")
-        elif path_obj.is_file():
-            path_obj.unlink()
-            print(f"Файл '{path}' удалён.")
-        else:
-            print(f"Путь '{path}' не найден.")
-    except Exception as e:
-        print(f"Ошибка при удалении: {e}")
+def delete_path(target):
+    if os.path.isfile(target):
+        os.remove(target)
+    elif os.path.isdir(target):
+        shutil.rmtree(target)
+    else:
+        raise FileNotFoundError(f"{target} не существует")
